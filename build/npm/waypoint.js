@@ -93,9 +93,9 @@ var Waypoint = React.createClass({
     }
 
     if (isVisible) {
-      this.props.onEnter();
+      this.props.onEnter(this);
     } else {
-      this.props.onLeave();
+      this.props.onLeave(this);
     }
 
     this._wasVisible = isVisible;
